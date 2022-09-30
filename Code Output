@@ -1,4 +1,38 @@
-# Input Basket #1:
+############## Input Basket #1:####################
 
-Output Highlited in green
+-------------------< com.brian.sales_tax:Sales_Tax >--------------------
+Building Sales_Tax 1.0-SNAPSHOT
+--------------------------------[ jar ]---------------------------------
 
+--- exec-maven-plugin:3.0.0:exec (default-cli) @ Sales_Tax ---
+Add Item: 1
+Quantity: 1
+Item Name: Book
+Price: 12.49
+Is item Imported[y/n]: n
+Is item Exempted[y/n]: y
+Add More Items [y/n]: y
+Add Item: 2
+Quantity: 1
+Item Name: Music_CD
+Price: 14.99
+Is item Imported[y/n]: n
+Is item Exempted[y/n]: n
+Add More Items [y/n]: y
+Add Item: 3
+Quantity: 1
+Item Name: Chocolate_Bar
+Price: 0.85
+Is item Imported[y/n]: n
+Is item Exempted[y/n]: y
+Add More Items [y/n]: n
+
+##################OutPUT########################
+
+1 Book at: 12.49
+1 Music_CD at: 16.49
+1 Chocolate_Bar at: 0.85
+Sales Taxes: 1.5
+Total: 29.83
+
+############## Input Basket #2:####################
