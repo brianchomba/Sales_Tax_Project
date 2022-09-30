@@ -70,3 +70,52 @@ Total time:  13:07 min
 Finished at: 2022-09-30T16:01:59+03:00
 
 ############## Input Basket #3:####################
+
+-------------------< com.brian.sales_tax:Sales_Tax >--------------------
+Building Sales_Tax 1.0-SNAPSHOT
+--------------------------------[ jar ]---------------------------------
+
+--- exec-maven-plugin:3.0.0:exec (default-cli) @ Sales_Tax ---
+Add Item: 1
+Quantity: 1
+Item Name: imported_bottle_of_perfume
+Price: 27.99
+Is item Imported[y/n]: y
+Is item Exempted[y/n]: n
+Add More Items [y/n]: y
+Add Item: 2
+Quantity: 1
+Item Name: bottle_of_perfume
+Price: 18.99
+Is item Imported[y/n]: n
+Is item Exempted[y/n]: n
+Add More Items [y/n]: y
+Add Item: 3
+Quantity: 1
+Item Name: packet_of_headache_pills
+Price: 9.75
+Is item Imported[y/n]: n
+Is item Exempted[y/n]: y
+Add More Items [y/n]: y
+Add Item: 4
+Quantity: 1
+Item Name: box_of_imported_chocolates
+Price: 11.25
+Is item Imported[y/n]: y
+Is item Exempted[y/n]: y
+Add More Items [y/n]: n
+
+##################OutPUT########################
+
+1 imported_bottle_of_perfume at: 32.19
+1 bottle_of_perfume at: 20.89
+1 packet_of_headache_pills at: 9.75
+1 box_of_imported_chocolates at: 11.81
+Sales Taxes: 6.66
+Total: 74.64
+------------------------------------------------------------------------
+BUILD SUCCESS
+------------------------------------------------------------------------
+Total time:  13:44 min
+Finished at: 2022-09-30T17:02:09+03:00
+------------------------------------------------------------------------
