@@ -19,14 +19,14 @@ public class Sales_Tax { //sales_tax class
             
             Tax tax = new Tax(); //creating an instance of Tax class
             System.out.println("Add Item: " + item_no); //prompting the user to add Items
-                       
-            System.out.print("Item Name: "); //reading items name
-            String item = input.next();
-            tax.itemdName = item;
             
             System.out.print("Quantity: "); //reading items Quantity
             int qty = input.nextInt();
             tax.Qty = qty;
+            
+            System.out.print("Item Name: "); //reading items name
+            String item = input.next();
+            tax.itemdName = item;
             
             System.out.print("Price: "); //reading items price
             float p = input.nextFloat();
